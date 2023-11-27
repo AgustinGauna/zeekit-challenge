@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+## Zeekit Frontend Developer Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this assignment, you will create a game in React called: "Guess the TV show name"
+Gameplay and rules:
 
-Currently, two official plugins are available:
+- The goal of the game is to guess a TV show's name.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The player will see a placeholder for a TV name with some missing letters. The player should guess
+  and fill in the TV show's name. If the player guesses successfully a tv show name, it gets a point and
+  moves forward to guess another tv show name.
+- The player would be able to use a hint feature in case it's stuck with a specific TV show.
 
-## Expanding the ESLint configuration
+- The player has a total of 3 life points. For each wrong guess, it loses a point. If the player lost all 3
+  points the game is over and can be started again.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- The player would be able to view a statistics popup (the data needs to be saved for the session).
+  App requirements:
+  use this API:
 
-- Configure the top-level `parserOptions` property like this:
+https://developers.themoviedb.org/3/getting-started/introduction
+fetch the data from here:
+https://developers.themoviedb.org/3/tv/get-top-rated-tv
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## The main page contains:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Generated TV name with missing letters to fill.
+2. An input component, where the player enters its guess.
+3. "Check the guess" button.
+4. “Hint” button.
+5. “Statistics” button.
+   The statistic popup will show the following info:
+6. How many right guesses the player has.
+7. How many wrong guesses the player has.
+8. How many times the player has used the hint feature.
+   ##Example:
+   The computer shows the word: “Gi*e*”.
+   The player should fill in the right answer "Given" so he will get one point and move to the next word.
+   If the player inputs a wrong word like "Gioed" he will lose a life point.
+   If the player clicks on the hint button he will see an overview of the TV show (below the guess
+   button).
+   “Tightly clutching his Gibson guitar, Mafuyu Satou steps out of his dark apartment to begin another
+   day of his high school life. While taking a nap in the quiet ....”
+
+Please send back a link to Github code and a Live demo (Heruko, etc.).
+
+What we will check when we review your assignment:
+
+1. Creative and responsive UI design.
+2. Using Typescript.
+3. Simple code structure.
+4. Reusable, Clean, and declarative code.
