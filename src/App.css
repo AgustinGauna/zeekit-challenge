@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container img{
+    width: 35px;
+    height: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    font-size: 25px;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+p{
+    width: 300px;
+    min-height: 300px;
+}

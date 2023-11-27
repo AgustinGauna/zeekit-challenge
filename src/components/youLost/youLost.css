@@ -1,0 +1,22 @@
+.lostContainer{
+    background-color: black;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 4px;
+}
+
+.lostContainer button{
+    width: 150px;
+}
+
+.lostContainer h1{
+    color: red;
+}
+
